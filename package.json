@@ -1,0 +1,23 @@
+{
+  "name": "employee_database",
+  "version": "1.0.0",
+  "description": "node and sql data to store and access employee data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bensonm3/hw12.git"
+  },
+  "keywords": [
+    "employee"
+  ],
+  "author": "Matt Benson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bensonm3/hw12/issues"
+  },
+  "homepage": "https://github.com/Bensonm3/hw12#readme"
+}

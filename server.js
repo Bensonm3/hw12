@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
     port: 3306,
 
     user: 'root',
-    password: '@Bensmat08',
+    password: '',
     database: 'employee_DB',
 });
 
@@ -296,6 +296,11 @@ function addDepartment(){
                 type: 'input',
                 name: 'deptid',
                 message: 'Department ID: ',
+                validate: function validateID(id)
+                {
+                    var reg = /^\d+$/;
+                    return reg.test(id) || "ID should be a number!";
+                }
             },
             {
                 type: 'input',
@@ -356,7 +361,12 @@ function addRole(){
             {
                 type: 'input',
                 name: 'roleid',
-                message: 'Role ID: '
+                message: 'Role ID: ',
+                validate: function validateID(id)
+                {
+                    var reg = /^\d+$/;
+                    return reg.test(id) || "ID should be a number!";
+                }
             },
             {
                 type: 'input',
@@ -436,6 +446,11 @@ function addEmployee() {
                                 type: 'input',
                                 name: 'empID',
                                 message: 'Employee ID: ',
+                                validate: function validateID(id)
+                                    {
+                                        var reg = /^\d+$/;
+                                        return reg.test(id) || "ID should be a number!";
+                                    }
                             },
                             {
                             type: 'list',
